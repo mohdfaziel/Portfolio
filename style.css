@@ -40,7 +40,7 @@ body {
 }
 
 .logo {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
@@ -79,7 +79,7 @@ span {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 0px;
     padding: 10rem 9% 10rem;
 }
 
@@ -193,13 +193,15 @@ section {
 }
 
 @keyframes words {
-
     0%,
+    60% {
+        content: 'Programmer';
+    }
+    61%,
     100% {
         content: 'Web_Developer';
     }
 }
-
 @keyframes typing {
 
     10%,
