@@ -682,6 +682,6 @@ section {
 }
 @media(max-width:550px) {
     .heading{
-        font-size: 6rem;
+        font-size: 4rem;
     }
 }
