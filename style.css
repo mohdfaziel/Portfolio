@@ -10,12 +10,20 @@
 }
 
 :root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    /* same as bg color text-2 */
+    --text-color2: #080808;
+    --main-color: #00ffee;
+}
+/* :root {
     --bg-color: #fcfcfc;
     --second-bg-color: #f8f8f8;
     --text-color: black;
     --text-color2: white;
     --main-color: #ff8615;
-}
+} */
 
 html {
     font-size: 62.5%;
