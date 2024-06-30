@@ -32,12 +32,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 3rem 9%;
+    padding: 2rem 9%;
     background: var(--text-color2);
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 100;
+    
 }
 
 .logo {
