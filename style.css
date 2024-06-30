@@ -82,7 +82,7 @@ span {
 }
 
 section {
-    min-height: 0px;
+    min-height: fit-content;
     padding: 10rem 9% 10rem;
 }
 
