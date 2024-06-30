@@ -92,13 +92,13 @@ section {
 }
 
 .home-content h3 {
-    font-size: 3.2rem;
+    font-size: 3em;
     font-weight: 700;
 }
 
 .home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .home-content h1 {
@@ -201,7 +201,6 @@ section {
     61%,
     100% {
         content: 'Web_Developer';
-        width: calc(50% + 8px);
     }
 }
 @keyframes typing {
