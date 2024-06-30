@@ -196,11 +196,12 @@ section {
 @keyframes words {
     0%,
     60% {
-        content: 'Coder';
+        content: 'Programmer';
     }
     61%,
     100% {
         content: 'Web_Developer';
+        width: calc(50% + 8px);
     }
 }
 @keyframes typing {
