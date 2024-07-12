@@ -294,6 +294,11 @@ section {
     font-size: 7rem;
     color: var(--main-color);
 }
+.projects-box svg {
+    margin: -17px;
+    font-size: 7rem;
+    color: var(--main-color);
+}
 .projects-box a {
     color: var(--text-color);
     display: inline-flex;
