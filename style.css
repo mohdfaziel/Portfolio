@@ -498,7 +498,7 @@ section {
 
 .certificates-container .certificates-box {
     flex: 1 1 30rem;
-    height: 35rem;
+    min-height: 30rem;
     background: var(--bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 3rem;
@@ -512,6 +512,7 @@ section {
     transform: scale(1.02);
 }
 .certificates-box svg {
+    margin-top:-15px ;
     font-size: 7rem;
     color: var(--main-color);
 }
