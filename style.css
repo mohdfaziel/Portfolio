@@ -497,7 +497,10 @@ section {
 }
 
 .certificates-container .certificates-box {
-    flex: 1 1 30rem;
+    flex: 1 1;
+    min-width: 30rem;
+    max-width: 33rem;
+    flex-wrap: wrap;
     min-height: 30rem;
     background: var(--bg-color);
     padding: 3rem 2rem 4rem;
@@ -533,13 +536,12 @@ section {
     color: var(--main-color);
 }
 .certificates-box h3 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
 }
 
 .certificates-box p {
     height: 7rem;
-    overflow-y: scroll;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: 1rem 0 3rem;
 }
 
