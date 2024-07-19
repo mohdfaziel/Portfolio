@@ -519,6 +519,26 @@ section {
     font-size: 7rem;
     color: var(--main-color);
 }
+.certificates-box > i {
+    margin-bottom: 2.4rem;
+    font-size: 6rem;
+    color: var(--main-color);
+}
+.certificates-box .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.certificates-box .icons i {
+    margin-bottom: 2.4rem;
+    font-size: 6rem;
+    color: var(--main-color);
+}
+.certificates-box .icons #link {
+    margin-bottom: 2.4rem;
+    font-size: 3rem;
+    color: white;
+}
 .certificates-box a {
     color: var(--text-color);
     display: inline-flex;
