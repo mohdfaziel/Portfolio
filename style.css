@@ -380,7 +380,7 @@ section {
     font-weight: 450;
 }
 .skill-bar .bar .java {
-    width: 50%;
+    width: 60%;
     animation: java 1s;
 }
 .skill-bar .bar .c {
@@ -398,17 +398,21 @@ section {
 }
 
 .skill-bar .bar .tailwind {
-    width: 60%;
+    width: 70%;
     animation: tailwind 5s;
 }
 
 .skill-bar .bar .javascript {
-    width: 45%;
+    width: 76%;
     animation: javascript 6s;
 }
 .skill-bar .bar .git {
-    width: 40%;
+    width: 87%;
     animation: git 7s;
+}
+.skill-bar .bar .figma {
+    width: 85%;
+    animation: git 8s;
 }
 
 
