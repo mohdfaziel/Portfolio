@@ -8,14 +8,13 @@
     scroll-behavior: smooth;
     font-family: "Poppins";
 }
-:root {
+/* :root {
     --bg-color: #131313;
     --second-bg-color: #252525;
     --text-color: white;
-    /* same as bg color text-2 */
     --text-color2: #080808;
     --main-color: #00ffee;
-}
+} */
 /* :root {
     --bg-color: #fcfcfc;
     --second-bg-color: #f8f8f8;
@@ -23,6 +22,16 @@
     --text-color2: white;
     --main-color: #ff8615;
 } */
+:root {
+    --second-bg-color: #c6a6f2;
+    --main-color: #af82ed;
+    --bg-color: #fcfcfc;
+    --text-color: black;
+    --text-color2: white;
+}
+g{
+    fill:var(--main-color);
+}
 
 html {
     font-size: 62.5%;
@@ -359,7 +368,7 @@ section {
 .skill-left .skill-bar .bar {
     width: 100%;
     height: 5px;
-    background-color: rgb(203, 203, 203);
+    background-color: var(--bg-color);
     border-radius: 25px;
     margin-top: 10px;
     position: relative;
@@ -595,7 +604,7 @@ section {
 .footer h4 {
     font-size: 2.6rem;
     text-align: center;
-    color: var(--second-bg-color);
+    color: var(--bg-color);
 }
 
 .footer .social {
