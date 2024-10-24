@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
     font-family: "Poppins";
 }
+
 /* :root {
     --bg-color: #131313;
     --second-bg-color: #252525;
@@ -29,8 +30,9 @@
     --text-color: black;
     --text-color2: white;
 }
-g{
-    fill:var(--main-color);
+
+g {
+    fill: var(--main-color);
 }
 
 html {
@@ -55,7 +57,7 @@ body {
     justify-content: space-between;
     z-index: 100;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    
+
 }
 
 .logo {
@@ -108,14 +110,17 @@ section {
     align-items: center;
     gap: 8rem;
 }
+
 .home-content h3 {
     font-size: 3em;
     font-weight: 700;
 }
+
 .home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
     font-size: 3rem;
 }
+
 .home-content h1 {
     font-size: 6rem;
     font-weight: 650;
@@ -209,15 +214,18 @@ section {
 }
 
 @keyframes words {
+
     0%,
     60% {
         content: 'Programmer';
     }
+
     61%,
     100% {
         content: 'Web_Developer';
     }
 }
+
 @keyframes typing {
 
     10%,
@@ -245,6 +253,7 @@ section {
         width: calc(100% + 8px);
     }
 }
+
 .heading {
     text-align: center;
     font-size: 7rem;
@@ -264,9 +273,10 @@ section {
     background-color: var(--text-color2);
 }
 
-.projects{
+.projects {
     background: var(--second-bg-color);
 }
+
 .projects h2 {
     margin-bottom: 10rem;
 }
@@ -293,20 +303,24 @@ section {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
-.projects-box .links{
+
+.projects-box .links {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .projects-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
+
 .projects-box svg {
     margin: -17px;
     font-size: 7rem;
     color: var(--main-color);
 }
+
 .projects-box a {
     color: var(--text-color);
     display: inline-flex;
@@ -323,6 +337,7 @@ section {
     font-size: 2.5rem;
     color: var(--main-color);
 }
+
 .projects-box h3 {
     font-size: 2.6rem;
 }
@@ -388,14 +403,17 @@ section {
     font-size: 1.5rem;
     font-weight: 450;
 }
+
 .skill-bar .bar .java {
     width: 60%;
     animation: java 1s;
 }
+
 .skill-bar .bar .c {
     width: 95%;
     animation: c 2s;
 }
+
 .skill-bar .bar .html {
     width: 92%;
     animation: html 3s;
@@ -415,10 +433,12 @@ section {
     width: 76%;
     animation: javascript 6s;
 }
+
 .skill-bar .bar .git {
     width: 87%;
     animation: git 7s;
 }
+
 .skill-bar .bar .figma {
     width: 85%;
     animation: figma 8s;
@@ -434,6 +454,7 @@ section {
         width: 60%;
     }
 }
+
 @keyframes c {
     0% {
         width: 0%;
@@ -443,6 +464,7 @@ section {
         width: 95%;
     }
 }
+
 @keyframes html {
     0% {
         width: 0%;
@@ -493,6 +515,7 @@ section {
         width: 87%;
     }
 }
+
 @keyframes figma {
     0% {
         width: 0%;
@@ -503,9 +526,10 @@ section {
     }
 }
 
-.certificates{
+.certificates {
     background: var(--second-bg-color);
 }
+
 .certificates h2 {
     margin-bottom: 10rem;
 }
@@ -536,31 +560,37 @@ section {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
+
 .certificates-box svg {
-    margin-top:-15px ;
+    margin-top: -15px;
     font-size: 7rem;
     color: var(--main-color);
 }
-.certificates-box > i {
+
+.certificates-box>i {
     margin-bottom: 2.4rem;
     font-size: 6rem;
     color: var(--main-color);
 }
-.certificates-box .icons{
+
+.certificates-box .icons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .certificates-box .icons i {
     margin-bottom: 2.4rem;
     font-size: 6rem;
     color: var(--main-color);
 }
+
 .certificates-box .icons #link {
     margin-bottom: 2.4rem;
     font-size: 3rem;
     color: white;
 }
+
 .certificates-box a {
     color: var(--text-color);
     display: inline-flex;
@@ -577,6 +607,7 @@ section {
     font-size: 2.5rem;
     color: var(--main-color);
 }
+
 .certificates-box h3 {
     font-size: 2.4rem;
 }
@@ -717,15 +748,24 @@ section {
         width: 70vw;
         margin-top: 4rem;
     }
+
     .certificates h2 {
         margin-bottom: 3rem;
     }
-    .projects h2{
+
+    .projects h2 {
         margin-bottom: 3rem;
     }
+
+    .navbar a:hover,
+    .navbar a.active {
+        color: var(--bg-color);
+        border-bottom: 2px solid var(--bg-color);
+    }
 }
+
 @media(max-width:550px) {
-    .heading{
+    .heading {
         font-size: 4rem;
     }
 }
