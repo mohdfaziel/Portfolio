@@ -30,7 +30,9 @@
     --text-color: black;
     --text-color2: white;
 }
-
+.projects-box .icon {
+    width: 6rem;
+}
 g {
     fill: var(--main-color);
 }
