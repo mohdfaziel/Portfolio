@@ -2,7 +2,7 @@ import { IoPerson } from "react-icons/io5";
 import { PiCertificate } from "react-icons/pi";
 import { GoLightBulb } from "react-icons/go";
 import { IoIosApps } from "react-icons/io";
-import logo from "../assets/Logo.svg";
+import logo from "../assets/logo.svg";
 import Ellipse from '../assets/Ellipse.svg';
 import { useState } from "react";
 import Item from "./Item";
