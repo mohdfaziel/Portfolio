@@ -13,7 +13,7 @@ import {
   tw,
   vite,
 } from "./Icons/Icons";
-import Skill from "./skill";
+import Skill from "./Skill.jsx";
 export default function Skills() {
   let skills = [
     { title: "JavaScript", purpose: "Interaction", logo: js },
