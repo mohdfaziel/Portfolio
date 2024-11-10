@@ -1,5 +1,5 @@
 import Image from "../assets/Image.jpg";
-import Logo from "../assets/Logo.svg";
+import Logo from "../assets/logo.svg";
 import { MdOutlineDownloading } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { ImGithub } from "react-icons/im";
