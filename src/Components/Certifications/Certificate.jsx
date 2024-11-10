@@ -1,0 +1,24 @@
+import Arrow from './Icons/arrow.png';
+import {cf } from "./Icons/icons";
+export default function Certificate({logos,title,desc,proof})
+{
+    return (
+        <div className="md:w-[16rem] w-full h-[17rem] px-6 py-3 hover:border-active border-[1px] border-dark1 transition-all flex flex-col justify-between items-start  rounded-xl bg-gradient-to-t from-dark1 to-dark2">
+        <div className="logos flex w-full justify-between items-center">
+            <div className="left flex">
+                {
+                    logos.map((logo,idx)=> <img key={idx} className="w-10" src={logo} alt=""/>)
+                }
+            </div>
+            <div className="right">
+                <img className="w-8 invert" src={cf} alt="" />
+            </div>
+        </div>
+        <div className="info">
+            <h1 className="text-xl text-active">{title}</h1>
+            <p className="text-sm text-unactive">{desc}</p>
+        </div>
+        <a href={proof} target='_blank'><button className="btn mb-5 flex gap-[4px] justify-center rounded-2xl items-center px-3 py-1 hover:scale-105 transition-all bg-main text-dark1">Show Credential<img className='w-[13px]' src={Arrow} alt=''/></button></a>
+        </div>
+    )
+}
