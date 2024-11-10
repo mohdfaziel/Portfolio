@@ -36,7 +36,7 @@ export default function Home() {
               front-end web design.
             </div>
             <a href={resume} target="_blank">
-              <button className="flex justify-center hover:scale-105 items-center gap-1 text-dark1 hover:bg-active  transition-all  bg-main px-3 py-1 rounded-2xl mt-3">
+              <button className="flex justify-center hover:scale-105 items-center gap-1 text-dark1 transition-all  bg-main px-3 py-1 rounded-2xl mt-3">
                 Resume <MdOutlineDownloading />
               </button>
             </a>

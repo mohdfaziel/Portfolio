@@ -28,6 +28,8 @@ export default function Projects() {
           skill2={react}
           skill3={tw}
           sc={Portfolio}
+          git = "https://github.com/mohdfaziel/Portfolio-New"
+          link = "https://faziel.vercel.app/"
         />
       </div>
       </div>
