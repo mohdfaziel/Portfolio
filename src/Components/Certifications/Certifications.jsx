@@ -29,9 +29,9 @@ export default function Certifications() {
   return (
     <div
       id="certificates"
-      className="About w-full px-[2rem] md:px-[10rem] py-[4rem] md:py-[5rem] text-active bg-dark1 min-h-screen flex justify-center items-center"
+      className=" w-full px-[2rem] md:px-[10rem] py-[4rem] md:py-[5rem] text-active bg-dark1 min-h-screen flex justify-center items-center"
     >
-      <div className="container flex flex-col gap-6 justify-center items-start">
+      <div className="relative container flex flex-col gap-6 justify-center items-start">
         <motion.dev
           variants={fadeIn("", 0.3)}
           initial="hidden"
@@ -39,7 +39,7 @@ export default function Certifications() {
           viewport={{ once: false, amount: 0.1 }}
           className="title text-4xl"
         >
-          <span className="border-t-4 border-main">C</span>ertifications
+          <span className="border-t-4 z-10 border-main">C</span>ertifications
         </motion.dev>
         <div className="certificates w-full justify-start gap-6 flex-wrap items-center flex">
           {certificates.map((certificate, idx) => (
@@ -52,6 +52,7 @@ export default function Certifications() {
             />
           ))}
         </div>
+        <div className="w-[300px] rounded-full h-[300px] absolute blur-3xl bg-active opacity-20 -top-[150px] -left-[150px]" />
       </div>
     </div>
   );

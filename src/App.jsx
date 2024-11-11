@@ -8,7 +8,7 @@ import About from './Components/About/About';
 import Footer from './Components/Footer';
 function App() {
   return (
-    <>
+    <div className='overflow-x-hidden'>
       <NavBar/>
       <Home/>
       <About/>
@@ -16,7 +16,7 @@ function App() {
       <Skills/>
       <Certifications/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

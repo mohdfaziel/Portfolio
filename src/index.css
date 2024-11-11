@@ -14,3 +14,16 @@ html{
 *{
     font-family: 'Gilroy';
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FFAF29;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #5C5E6B;
+}

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import fadeIn from "../../Framer/Fadein.js";
 import Project from "./Project";
-import { Logo } from "./Logos/projectLogos.js";
+import { Logo} from "./Logos/projectLogos.js";
 import { Portfolio } from "./Images/ScreenShots";
 import { js, css, html, react, tw, vite } from "../Skills/Icons/Icons";
 export default function Projects() {
@@ -11,8 +11,7 @@ export default function Projects() {
       className="About w-full px-[2rem]  md:px-[10rem] py-[3rem] md:py-[5rem] text-active bg-dark1 min-h-screen flex justify-center items-center"
     >
       <div
-        viewport={{ once: false, amount: 0.1 }}
-        className=" w-full flex max-w-[70rem] flex-col justify-center gap-6 items-start"
+        className=" relative w-full flex max-w-[70rem] flex-col justify-center gap-6 items-start"
       >
         <motion.h1
           variants={fadeIn("up", 0.3)}
@@ -36,6 +35,7 @@ export default function Projects() {
             link="https://faziel.vercel.app/"
           />
         </div>
+      <div className="w-[300px] rounded-full h-[300px] absolute blur-3xl bg-active opacity-20 -top-[85px] -right-[150px]" />
       </div>
     </div>
   );

@@ -16,8 +16,8 @@ export default function Home() {
     loop: {},
   });
   return (
-    <div className="MainHome w-full px-[2rem] md:px-[10rem] text-active py-[1rem] md:py-[5rem] bg-dark1 min-h-screen flex justify-center   items-center">
-      <div className="Container max-w-[85rem] gap-20 md:gap-0 h-full md:h-full w-full flex flex-col-reverse md:flex-row justify-center md:justify-between items-center">
+    <div className="MainHome w-full px-[2rem] md:px-[10rem] text-active py-[1rem] md:py-[5rem] bg-dark1 min-h-screen flex justify-center  items-center">
+      <div className="Container max-w-[85rem] gap-20 md:gap-0 h-full md:h-full w-full flex flex-col-reverse md:flex-row justify-center md:justify-center items-center">
         <motion.div
           variants={fadeIn("", 0.3)}
           initial="hidden"
@@ -57,7 +57,7 @@ export default function Home() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.1 }}
-          className="Right w-full md:w-[50%]  h-full flex justify-center items-center gap-3"
+          className="Right w-full md:w-[50%]  h-full flex justify-start items-center gap-3 md:gap-12"
         >
           <div className="Info flex flex-col gap-2 justify-center items-start">
             <div className="text-6xl">I'm</div>
@@ -67,7 +67,7 @@ export default function Home() {
                 <Cursor cursorStyle="|" />
               </span>
             </div>
-            <div className="text-sm text-unactive">
+            <div className="text-sm w-[18rem] md:w-[20rem] text-unactive">
               Aspiring Full-Stack Web Developer. Dedicated to crafting
               cutting-edge, user-centric web solutions with a creative touch.
             </div>
