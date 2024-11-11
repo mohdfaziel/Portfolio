@@ -1,5 +1,5 @@
 import { GoArrowUpRight } from "react-icons/go";
-import {arrow} from './Logos/projectLogos.js';
+import {arrow} from './Logos/projectLogos';
 export default function Project({logo,title,desc,skill1,skill2,skill3,sc,git,link}) {
   return (
     <div className=" border-[1px] flex justify-start items-center border-active overflow-hidden relative px-8 py-8 rounded-2xl min-h-[50%] w-full">
