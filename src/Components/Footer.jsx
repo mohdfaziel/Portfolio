@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import fadeIn from "../Framer/Fadein.js";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { ImGithub } from "react-icons/im";
 import { SiLeetcode } from "react-icons/si";
@@ -9,7 +11,13 @@ export default function Footer() {
       id="certificates"
       className="About w-full px-[2rem] md:px-[10rem] py-[4rem] md:py-[5rem] text-active  min-h-[50vh] bg-gradient-to-t from-dark1 to-dark2 flex justify-center items-center"
     >
-      <div className="container w-full flex flex-col gap-3 justify-center items-center">
+      <motion.dev
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.1 }}
+        className="container w-full flex flex-col gap-3 justify-center items-center"
+      >
         <h1 className="text-5xl text-center bg-gradient-to-t from-dark2 to-active bg-clip-text text-transparent">
           Imagining, Designing, and Delivering!
         </h1>
@@ -34,11 +42,13 @@ export default function Footer() {
             <FaInstagram className="transition-all hover:scale-150" />
           </a>
         </div>
-        <a href="#"><h1 className="-rotate-90 text-2xl">&#10148;</h1></a>
+        <a href="#">
+          <h1 className="-rotate-90 text-2xl">&#10148;</h1>
+        </a>
         <p className="text-sm text-unactive">
           Design & Built by Mohd Faziel © 2024
         </p>
-      </div>
+      </motion.dev>
     </div>
   );
 }

@@ -1,8 +1,13 @@
+import { motion } from "framer-motion";
+import fadeIn from "../../Framer/Fadein.js";
 import Arrow from "./Icons/arrow.png";
 import { cf } from "./Icons/icons";
 export default function Certificate({ logos, title, desc, proof }) {
   return (
-    <div className="md:w-[16rem] w-full h-[17rem] px-6 py-3 hover:scale-105 border-dark1 transition-all flex flex-col justify-between items-start  rounded-t-xl bg-gradient-to-t from-dark1 to-dark2">
+    <motion.div variants={fadeIn("", 0.3)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{ once: false, amount: 0.1 }} className="md:w-[16rem] w-full h-[17rem] px-6 py-3 hover:scale-105 border-dark1 transition-all flex flex-col justify-between items-start  rounded-t-xl bg-gradient-to-t from-dark1 to-dark2">
       <div className="logos flex w-full justify-between items-center">
         <div className="left flex">
           {logos.map((logo, idx) => (
@@ -23,6 +28,6 @@ export default function Certificate({ logos, title, desc, proof }) {
           <img className="w-[14px] pt-[1px]" src={Arrow} alt="" />
         </button>
       </a>
-    </div>
+    </motion.div>
   );
 }
