@@ -28,12 +28,11 @@ export default function Home() {
           <div className="Info flex flex-col gap-2 justify-center items-start">
             <div className="text-6xl">I'm</div>
             <div className="text-3xl">
-              Web <span className=" text-main">Designer</span> and{" "}
-              <span className=" text-main">Developer</span>, based in Dehli
+              Web <span className=" text-main">Developer</span> and{" "}
+              <span className=" text-main">Programmer</span>, based in Dehli
             </div>
             <div className="text-sm text-unactive">
-              I'm a web developer with experience in digital concept arts and
-              front-end web design.
+            Aspiring Full-Stack Web Developer. Dedicated to crafting cutting-edge, user-centric web solutions with a creative touch.
             </div>
             <a href={resume} target="_blank">
               <button className="flex justify-center hover:scale-105 items-center gap-1 text-dark1 transition-all  bg-main px-3 py-1 rounded-2xl mt-3">

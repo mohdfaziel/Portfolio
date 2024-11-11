@@ -1,5 +1,5 @@
 import Project from "./Project";
-import Logo from "../Projects/Logo.svg";
+import {Logo} from "../Projects/Logos/projectLogos";
 import { Portfolio } from "./Images/ScreenShots";
 import {
   js,

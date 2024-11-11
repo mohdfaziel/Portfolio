@@ -1,4 +1,5 @@
 import { GoArrowUpRight } from "react-icons/go";
+import {arrow} from './Logos/projectLogos.js';
 export default function Project({logo,title,desc,skill1,skill2,skill3,sc,git,link}) {
   return (
     <div className=" border-[1px] flex justify-start items-center border-active overflow-hidden relative px-8 py-8 rounded-2xl min-h-[50%] w-full">
@@ -6,7 +7,7 @@ export default function Project({logo,title,desc,skill1,skill2,skill3,sc,git,lin
         <div className="Logo">
           <img src={logo} alt="" />
         </div>
-       <a href={git} target="_blank"> <h1 className="text-2xl hover:scale-105 transition-all text-active flex gap-[1px] justify-center items-end">{title}<GoArrowUpRight className="w-4" /></h1></a>
+       <a href={git} target="_blank"> <h1 className="text-2xl hover:scale-105 transition-all text-active flex gap-[3px] justify-center items-center"><span>{title}</span> <img className="w-4 pt-1" src={arrow} alt="" /></h1></a>
         <p className=" text-sm text-unactive">
         {desc}
         </p>
@@ -15,7 +16,7 @@ export default function Project({logo,title,desc,skill1,skill2,skill3,sc,git,lin
           <img className="w-6" src={skill2} alt="" />
           <img className="w-6" src={skill3} alt="" />
         </div>
-        <a href={link} target="_blank"><button className="text-xl transition-all  hover:scale-105 text-dark1 w-20 mt-3 bg-main px-3 rounded-3xl py-1">
+        <a href={link} target="_blank"><button className="text-xl transition-all  hover:scale-105 text-dark1 w-16 mt-3 bg-main px-3 rounded-3xl py-1">
           Live
         </button></a>
       </div>

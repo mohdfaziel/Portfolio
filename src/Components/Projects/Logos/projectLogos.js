@@ -1,2 +1,3 @@
 import Logo from './Logo.svg';
-export {Logo};
+import arrow from './arrow.png';
+export {Logo,arrow};
