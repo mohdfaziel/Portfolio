@@ -4,10 +4,14 @@ import Arrow from "./Icons/arrow.png";
 import { cf } from "./Icons/icons";
 export default function Certificate({ logos, title, desc, proof }) {
   return (
-    <motion.div variants={fadeIn("", 0.3)}
-    initial="hidden"
-    whileInView={"show"}
-    viewport={{ once: false, amount: 0.1 }} className="md:w-[16rem] w-full h-[17rem] px-6 py-3 hover:scale-105 border-dark1 transition-all flex flex-col justify-between items-start  rounded-t-xl bg-gradient-to-t from-dark1 to-dark2">
+    <motion.div
+      variants={fadeIn("", 0.3)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.1 }}
+      whileHover={{ scale: 1.05 }}
+      className="md:w-[16rem] w-full h-[17rem] px-6 py-3 border-dark1 transition-all flex flex-col justify-between items-start  rounded-t-xl bg-gradient-to-t from-dark1 to-dark2"
+    >
       <div className="logos flex w-full justify-between items-center">
         <div className="left flex">
           {logos.map((logo, idx) => (
@@ -23,7 +27,7 @@ export default function Certificate({ logos, title, desc, proof }) {
         <p className="text-sm text-unactive">{desc}</p>
       </div>
       <a href={proof} target="_blank">
-        <button className="btn mb-5 flex gap-[4px] justify-center rounded-2xl items-center px-3 py-1 hover:scale-105 transition-all bg-main text-dark1">
+        <button className="btn mb-5 flex gap-[4px] justify-center rounded-2xl items-center px-3 py-1 transition-all bg-main text-dark1">
           <span>Show Credential</span>
           <img className="w-[14px] pt-[1px]" src={Arrow} alt="" />
         </button>

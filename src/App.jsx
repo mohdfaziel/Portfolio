@@ -4,7 +4,7 @@ import Home from './Components/Home';
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
 import Certifications from './Components/Certifications/Certifications';
-import About from './Components/About';
+import About from './Components/About/About';
 import Footer from './Components/Footer';
 function App() {
   return (
