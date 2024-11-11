@@ -1,4 +1,3 @@
-import { GoArrowUpRight } from "react-icons/go";
 import {arrow} from './Logos/projectLogos';
 export default function Project({logo,title,desc,skill1,skill2,skill3,sc,git,link}) {
   return (
