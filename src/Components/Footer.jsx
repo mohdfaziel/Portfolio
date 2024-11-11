@@ -34,7 +34,7 @@ export default function Footer() {
             <FaInstagram className="transition-all hover:scale-150" />
           </a>
         </div>
-        <h1 className="-rotate-90 text-2xl">&#10148;</h1>
+        <a href="#"><h1 className="-rotate-90 text-2xl">&#10148;</h1></a>
         <p className="text-sm text-unactive">
           Design & Built by Mohd Faziel © 2024
         </p>
