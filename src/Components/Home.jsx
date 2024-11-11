@@ -29,7 +29,7 @@ export default function Home() {
             <div className="text-6xl">I'm</div>
             <div className="text-3xl">
               Web <span className=" text-main">Designer</span> and{" "}
-              <span className=" text-main">Developer</span>, based in Dehli
+              <span className=" text-main">Developer</span>, based in Delhi
             </div>
             <div className="text-sm text-unactive">
               I'm a web developer with experience in digital concept arts and
