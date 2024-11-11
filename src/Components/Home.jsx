@@ -1,3 +1,4 @@
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Image from "../assets/Image.jpg";
 import Logo from "../assets/logo.svg";
 import { MdOutlineDownloading } from "react-icons/md";
@@ -8,6 +9,10 @@ import { FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import resume from "../assets/resume.pdf";
 export default function Home() {
+  const [text] = useTypewriter({
+    words: ["Web Developer", "Coder", "Programmer"],
+    loop: {},
+  });
   return (
     <div className="MainHome w-full px-[2rem] md:px-[10rem] text-active py-[1rem] md:py-[5rem] bg-dark1 min-h-screen flex justify-center   items-center">
       <div className="Container max-w-[85rem] gap-20 md:gap-0 h-full md:h-full w-full flex flex-col-reverse md:flex-row justify-center md:justify-between items-center">
@@ -27,12 +32,15 @@ export default function Home() {
         <div className="Right w-full md:w-[50%]  h-full flex justify-center items-center gap-3">
           <div className="Info flex flex-col gap-2 justify-center items-start">
             <div className="text-6xl">I'm</div>
-            <div className="text-3xl">
-              Web <span className=" text-main">Designer</span> and{" "}
-              <span className=" text-main">Developer</span>, based in Delhi
+            <div className="text-3xl text-main">
+              {text}
+              <span className="text-main">
+                <Cursor cursorStyle="|" />
+              </span>
             </div>
             <div className="text-sm text-unactive">
-            Aspiring Full-Stack Web Developer. Dedicated to crafting cutting-edge, user-centric web solutions with a creative touch.
+              Aspiring Full-Stack Web Developer. Dedicated to crafting
+              cutting-edge, user-centric web solutions with a creative touch.
             </div>
             <a href={resume} target="_blank">
               <button className="flex justify-center hover:scale-105 items-center gap-1 text-dark1 transition-all  bg-main px-3 py-1 rounded-2xl mt-3">
@@ -64,25 +72,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
-
-{
-  /* <div className="h-full flex flex-col justify-between items-center">
-          <div><BiWinkSmile className='text-main text-6xl'/></div>
-          <div className=' text-5xl font-extrabold tracking-wide'>Mohd<br/> <span className='border-b-4 border-main'>F</span>aziel</div>
-          <div>Social Media Icons</div>
-        </div>
-        <div className="h-full flex flex-col justify-between items-center">
-            <div className='rounded-full overflow-hidden shadow-md shadow-dark2 w-[150px] h-[150px]'>
-                <img width="100%" height="100%" src={Image} alt="" />
-            </div>
-          <div>
-            <p>-Introduction</p>
-            <div className="w-52">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, impedit!
-            </div>
-          </div>
-          <div>Resume</div>
-        </div> */
 }
