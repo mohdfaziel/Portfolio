@@ -31,7 +31,7 @@ export default function About() {
             <div className="w-[10px] h-[10px] absolute top-[5.5px] -left-[5.5px] rounded-full bg-main"></div>
           </div>
           <div className="relative pl-3">
-            <div className="text-base text-unactive">2020-2021 | JKBOSE</div>
+            <div className="text-base text-unactive">2022-2026 | AKTU</div>
             <div className="text-2xl">
               Galgotias College of Engineering and Technology
             </div>

@@ -28,8 +28,8 @@ export default function Home() {
           <div className="Info flex flex-col gap-2 justify-center items-start">
             <div className="text-6xl">I'm</div>
             <div className="text-3xl">
-              Web <span className=" text-main">Developer</span> and{" "}
-              <span className=" text-main">Programmer</span>, based in Dehli
+              Web <span className=" text-main">Designer</span> and{" "}
+              <span className=" text-main">Developer</span>, based in Delhi
             </div>
             <div className="text-sm text-unactive">
             Aspiring Full-Stack Web Developer. Dedicated to crafting cutting-edge, user-centric web solutions with a creative touch.
