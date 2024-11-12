@@ -13,8 +13,8 @@ export default function NavBar() {
   };
   return (
     <>
-      <div className="fixed z-20 max-[500px]:hidden top-2 w-full flex font-poppins justify-center items-center h-[4rem] bg-secondary">
-        <ul className="w-full text-sm h-full text-unactive bg-transparent flex justify-evenly items-center">
+      <div className="fixed z-20 max-[500px]:hidden top-2 w-full flex font-poppins justify-center items-center h-[4rem]">
+        <ul className="w-[90%] rounded-full shadow-md backdrop-blur-md text-sm h-full text-unactive flex justify-evenly items-center">
           <Item
             title={"About"}
             target={"about"}
@@ -45,14 +45,14 @@ export default function NavBar() {
            <img width="300px" className="-z-10 -translate-x-2 absolute opacity-15" src={Ellipse} alt="" />
         </ul>
       </div>
-      <div className="fixed min-[500px]:hidden z-20 bottom-0 bg-transparent w-full justify-center items-center">
-        <ul className="w-full relative flex bg-transparent py-2 justify-evenly items-center">
+      <div className="fixed min-[500px]:hidden flex z-20 bottom-2 w-full justify-center items-center">
+        <ul className=" relative flex w-[95%] rounded-full shadow-md backdrop-blur-md py-2 justify-evenly items-center">
           <li className="flex h-6 gap-1 flex-col items-center">
             <a
               href="#about"
               onClick={() => handleClick("about")}
               className={`${
-                activeLink === "about" ? "text-active" : "text-unactive"
+                activeLink === "about" ? "text-active" : "text-gray-400"
               } hover:text-active hover:scale-125 transition-all`}
             >
               <IoPerson />
@@ -68,7 +68,7 @@ export default function NavBar() {
               href="#projects"
               onClick={() => handleClick("projects")}
               className={`${
-                activeLink === "projects" ? "text-active" : "text-unactive"
+                activeLink === "projects" ? "text-active" : "text-gray-400"
               } hover:text-active hover:scale-125 transition-all`}
             >
               <IoIosApps />
@@ -87,7 +87,7 @@ export default function NavBar() {
               href="#skills"
               onClick={() => handleClick("skills")}
               className={`${
-                activeLink === "skills" ? "text-active" : "text-unactive"
+                activeLink === "skills" ? "text-active" : "text-gray-400"
               } hover:text-active hover:scale-125 transition-all`}
             >
               <GoLightBulb />
@@ -103,7 +103,7 @@ export default function NavBar() {
               href="#certificates"
               onClick={() => handleClick("certificates")}
               className={`${
-                activeLink === "certificates" ? "text-active" : "text-unactive"
+                activeLink === "certificates" ? "text-active" : "text-gray-400"
               } hover:text-active hover:scale-125 transition-all`}
             >
               <PiCertificate />
