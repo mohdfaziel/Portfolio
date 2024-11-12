@@ -10,7 +10,7 @@ export default function Certificate({ logos, title, desc, proof }) {
       whileInView={"show"}
       viewport={{ once: false, amount: 0.1 }}
       whileHover={{ scale: 1.05 }}
-      className="md:w-[16rem] z-10 backdrop-blur-xl w-full h-[17rem] px-6 py-3 border-dark1 transition-all flex flex-col justify-between items-start  rounded-t-xl bg-gradient-to-t from-dark1 to-dark2"
+      className="md:w-[16rem] backdrop-blur-xl w-full h-[17rem] px-6 py-3 border-dark1 transition-all flex flex-col justify-between items-start  rounded-t-xl bg-gradient-to-t from-dark1 to-dark2"
     >
       <div className="logos flex w-full justify-between items-center">
         <div className="left flex">

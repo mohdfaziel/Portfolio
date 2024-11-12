@@ -7,7 +7,7 @@ export default function Skill({ title, purpose, logo }) {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: false, amount: 0.1 }}
-      className="flex z-10 hover:bg-active transition-all text-active hover:text-dark2 justify-start gap-2 border-[1px] rounded-2xl px-2 backdrop-blur-md py-2 border-unactive items-center w-full md:w-48"
+      className="flex  hover:bg-active transition-all text-active hover:text-dark2 justify-start gap-2 border-[1px] rounded-2xl px-2 backdrop-blur-md py-2 border-unactive items-center w-full md:w-48"
     >
       <div className="Logo w-11">
         <img
