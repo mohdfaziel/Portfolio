@@ -14,7 +14,7 @@ export default function NavBar() {
   return (
     <>
       <div className="fixed z-20 max-[500px]:hidden top-2 w-full flex font-poppins justify-center items-center h-[4rem]">
-        <ul className="w-[90%] rounded-full shadow-md backdrop-blur-md text-sm h-full text-unactive flex justify-evenly items-center">
+        <ul className="w-[90%] rounded-full shadow-md backdrop-blur-md text-sm h-full text-gray-400 flex justify-evenly items-center">
           <Item
             title={"About"}
             target={"about"}
