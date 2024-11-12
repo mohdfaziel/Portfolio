@@ -45,7 +45,7 @@ export default function NavBar() {
            <img width="300px" className="-z-10 -translate-x-2 absolute opacity-15" src={Ellipse} alt="" />
         </ul>
       </div>
-      <div className="fixed min-[500px]:hidden z-10 bottom-0 bg-transparent w-full justify-center items-center">
+      <div className="fixed min-[500px]:hidden z-20 bottom-0 bg-transparent w-full justify-center items-center">
         <ul className="w-full relative flex bg-transparent py-2 justify-evenly items-center">
           <li className="flex h-6 gap-1 flex-col items-center">
             <a
