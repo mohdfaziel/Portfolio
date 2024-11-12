@@ -5,9 +5,9 @@ export default function Project({
   logo,
   title,
   desc,
-  skill1,
-  skill2,
-  skill3,
+  skill1 = false,
+  skill2 = false,
+  skill3 = false,
   sc,
   git,
   link,
@@ -32,9 +32,9 @@ export default function Project({
         </a>
         <p className=" text-sm text-unactive">{desc}</p>
         <div className="Skills flex justify-start items-center gap-2">
-          <img className="w-6" src={skill1} alt="" />
-          <img className="w-6" src={skill2} alt="" />
-          <img className="w-6" src={skill3} alt="" />
+          {skill1 && <img className="w-6" src={skill1} alt="" />}
+          {skill2 && <img className="w-6" src={skill2} alt="" />}
+          {skill3 && <img className="w-6" src={skill3} alt="" />}
         </div>
         <a href={link} target="_blank">
           <button className="text-xl transition-all  hover:scale-105 text-dark1 w-16 mt-3 bg-main px-3 rounded-3xl py-1">

@@ -27,9 +27,8 @@ export default function Projects() {
             logo={Logo}
             title="Portfolio"
             desc="This portfolio website showcases my Web development skills using React, Tailwind, and JavaScript, featuring diverse projects and a focus on user-centric design."
-            skill1={js}
-            skill2={react}
-            skill3={tw}
+            skill1={react}
+            skill2={tw}
             sc={Portfolio}
             git="https://github.com/mohdfaziel/Portfolio-New"
             link="https://faziel.vercel.app/"
