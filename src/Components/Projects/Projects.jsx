@@ -42,8 +42,8 @@ export default function Projects() {
             skill2={tw}
             skill3={framer}
             sc={Bakery}
-            git="https://github.com/mohdfaziel/Portfolio-New"
-            link="https://faziel.vercel.app/"
+            git="https://github.com/mohdfaziel/Aatiqa-Bakes-Cakes"
+            link="https://aatiqa-bakes-cakes.vercel.app/"
           />
         </div>
       <div className="w-[300px] rounded-full h-[300px] absolute blur-3xl bg-active opacity-20 -top-[85px] -right-[150px]" />
