@@ -1,2 +1,3 @@
 import Portfolio from "./Portfolio.png";
-export {Portfolio};
+import Bakery from "./bakery.png";
+export {Portfolio,Bakery};

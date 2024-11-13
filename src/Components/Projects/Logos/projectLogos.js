@@ -1,3 +1,4 @@
 import Logo from './logo.svg';
 import arrow from './arrow.png';
-export {Logo,arrow};
+import bakes from './bakes.png';
+export {Logo,arrow,bakes};

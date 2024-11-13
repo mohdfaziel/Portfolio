@@ -11,5 +11,6 @@ import mi from './MaterialUI.svg';
 import react from './React.svg';
 import tw from './Tailwind.svg';
 import vite from './Vite.svg';
+import framer from './framer.svg';
 
-export {js,c,j,py,css,figma,git,github,html,mi,react,tw,vite};
+export {js,c,j,framer,py,css,figma,git,github,html,mi,react,tw,vite};

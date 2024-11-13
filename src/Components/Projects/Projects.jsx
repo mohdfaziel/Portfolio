@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import fadeIn from "../../Framer/Fadein.js";
 import Project from "./Project";
-import { Logo} from "./Logos/projectLogos.js";
-import { Portfolio } from "./Images/ScreenShots";
-import { js, css, html, react, tw, vite } from "../Skills/Icons/Icons";
+import { bakes, Logo} from "./Logos/projectLogos.js";
+import { Portfolio, Bakery } from "./Images/ScreenShots";
+import { js, css, html, react, tw, vite ,framer} from "../Skills/Icons/Icons";
 export default function Projects() {
   return (
     <div
@@ -29,7 +29,19 @@ export default function Projects() {
             desc="This portfolio website showcases my Web development skills using React, Tailwind, and JavaScript, featuring diverse projects and a focus on user-centric design."
             skill1={react}
             skill2={tw}
+            skill3={framer}
             sc={Portfolio}
+            git="https://github.com/mohdfaziel/Portfolio-New"
+            link="https://faziel.vercel.app/"
+          />
+          <Project
+            logo={bakes}
+            title="Aatiqa Bakes"
+            desc="A charming and modern bakery website built using Tailwind CSS, React, and Framer Motion, designed to provide an inviting and interactive experience for customers."
+            skill1={react}
+            skill2={tw}
+            skill3={framer}
+            sc={Bakery}
             git="https://github.com/mohdfaziel/Portfolio-New"
             link="https://faziel.vercel.app/"
           />

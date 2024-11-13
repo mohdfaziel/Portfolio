@@ -14,6 +14,7 @@ import {
   react,
   tw,
   vite,
+  framer
 } from "./Icons/Icons";
 import Skill from "./Skill.jsx";
 export default function Skills() {
@@ -31,6 +32,7 @@ export default function Skills() {
     { title: "React", purpose: "FrameWork", logo: react },
     { title: "Tailwind", purpose: "User Interface", logo: tw },
     { title: "Vite", purpose: "Bundling", logo: vite },
+    { title: "Framer Motion", purpose: "Animation", logo: framer },
   ];
   return (
     <div
