@@ -21,8 +21,8 @@ export default function Project({
       className=" border-[1px] flex justify-start backdrop-blur-md items-center border-active overflow-hidden relative px-8 py-8 rounded-2xl min-h-[50%] w-full"
     >
       <div className="Info z-10 flex flex-col gap-3 justify-center items-start w-[100%] md:w-[50%]">
-        <div className="Logo">
-          <img src={logo} alt="" />
+        <div className="Logo w-[3rem] h-[3rem]">
+          <img src={logo} className="w-full h-full" alt="" />
         </div>
         <a href={git} target="_blank">
           {" "}
