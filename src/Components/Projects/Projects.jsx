@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import fadeIn from "../../Framer/Fadein.js";
 import Project from "./Project";
-import { bakes, honey, Logo} from "./Logos/projectLogos.js";
-import { Portfolio, Bakery, Honey } from "./Images/ScreenShots";
+import { bakes, blog, honey, Logo} from "./Logos/projectLogos.js";
+import { Portfolio, Bakery,Blog, Honey } from "./Images/ScreenShots";
 import { js, css, html, react, tw, vite,appwrite ,framer} from "../Skills/Icons/Icons";
 export default function Projects() {
   return (
@@ -33,6 +33,17 @@ export default function Projects() {
             sc={Portfolio}
             git="https://github.com/mohdfaziel/Portfolio-New"
             link="https://faziel.vercel.app/"
+          />
+          <Project
+            logo={blog}
+            title="Blog WebApp"
+            desc="Blog WebApp is a web application for uploading and viewing blog posts. Built using React.js and Appwrite, it features secure authentication, intuitive navigation, and smooth performance"
+            skill1={react}
+            skill2={tw}
+            skill3={appwrite}
+            sc={Blog}
+            git="https://github.com/mohdfaziel/BlogApp"
+            link="https://blog-app-faziel.vercel.app/"
           />
           <Project
             logo={bakes}
