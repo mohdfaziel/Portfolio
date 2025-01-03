@@ -2,8 +2,8 @@ import { IoPerson } from "react-icons/io5";
 import { PiCertificate } from "react-icons/pi";
 import { GoLightBulb } from "react-icons/go";
 import { IoIosApps } from "react-icons/io";
-import logo from "../assets/logo.svg";
-import Ellipse from '../assets/Ellipse.svg';
+import logo from "../../assets/logo.svg";
+import Ellipse from '../../assets/Ellipse.svg';
 import { useState } from "react";
 import Item from "./Item";
 export default function NavBar() {
@@ -13,8 +13,8 @@ export default function NavBar() {
   };
   return (
     <>
-      <div className="fixed z-20 max-[500px]:hidden top-2 w-full flex font-poppins justify-center items-center h-[4rem]">
-        <ul className="w-[90%] rounded-full shadow-md backdrop-blur-md text-sm h-full text-gray-400 flex justify-evenly items-center">
+      <div className="fixed z-20 max-[500px]:hidden top-2 w-full flex font-poppins justify-center items-center h-[4rem] md:h-[5rem]">
+        <ul className="w-[90%] rounded-full shadow-md backdrop-blur-md text-sm md:text-xl h-full text-gray-400 flex justify-evenly items-center">
           <Item
             title={"About"}
             target={"about"}
@@ -28,7 +28,7 @@ export default function NavBar() {
             handleClick={handleClick}
           />
           <a href="#" onClick={() => handleClick("home")}>
-            <img src={logo} alt="" />
+            <img src={logo} className="md:scale-125" alt="" />
           </a>
           <Item
             title={"Skills"}

@@ -5,7 +5,7 @@ const ResumeButton = () => {
       <span className="relative text-sm md:text-xl z-10 flex items-center justify-center gap-1 px-6 py-2 transition-colors duration-400 group-hover:text-dark1">
         Resume <MdOutlineDownloading />
       </span>
-      <div className="absolute inset-0 transform -skew-x-0 bg-active transition-transform duration-400 group-hover:translate-x-full"></div>
+      <div className="absolute inset-0 transform -skew-x-0 bg-active transition-transform duration-700 group-hover:translate-x-full"></div>
     </button>
   );
 };
