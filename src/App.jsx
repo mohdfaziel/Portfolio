@@ -1,6 +1,6 @@
 import '@fontsource/poppins';
 import NavBar from './Components/NavBar';
-import Home from './Components/Home';
+import Home from './Components/Home/Home';
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
 import Certifications from './Components/Certifications/Certifications';

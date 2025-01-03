@@ -1,15 +1,16 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import Image from "../assets/Image.jpg";
+import Image from "../../assets/Image.jpg";
 import { motion } from "framer-motion";
-import fadeIn from "../Framer/Fadein.js";
-import Logo from "../assets/logo.svg";
+import fadeIn from "../../Framer/Fadein.js";
+import Logo from "../../assets/logo.svg";
 import { MdOutlineDownloading } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { ImGithub } from "react-icons/im";
 import { SiLeetcode } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import resume from "../assets/resume.pdf";
+import resume from "../../assets/resume.pdf";
+import ResumeButton from "./ResumeButton.jsx";
 export default function Home() {
   const [text] = useTypewriter({
     words: ["Web Developer", "Coder", "Programmer"],
@@ -41,10 +42,10 @@ export default function Home() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.1 }}
-              className="absolute -top-9 -left-10"
+              className="absolute -top-9 md:-top-16 -left-10"
             >
-              <img width="40px" className="" src={Logo} alt="" />
-              <div className="name text-5xl md:text-6xl ">
+              <img width="40px" className="md:w-[70px]" src={Logo} alt="" />
+              <div className="name text-5xl md:text-7xl ">
                 Mohd <br />{" "}
                 <span className="border-b-4 rounded-sm border-main">Faz</span>
                 iel
@@ -60,41 +61,39 @@ export default function Home() {
           className="Right w-full md:w-[50%]  h-full flex justify-start items-center gap-3 md:gap-12"
         >
           <div className="Info flex flex-col gap-2 justify-center items-start">
-            <div className="text-6xl">I'm</div>
-            <div className="text-3xl text-main">
+            <div className="text-6xl md:text-8xl">I'm</div>
+            <div className="text-3xl md:text-6xl text-main">
               {text}
               <span className="text-main">
                 <Cursor cursorStyle="|" />
               </span>
             </div>
-            <div className="text-sm w-[18rem] md:w-[20rem] text-unactive">
+            <div className="text-sm md:text-xl w-[18rem] md:w-[30rem] text-unactive">
               Aspiring Full-Stack Web Developer. Dedicated to crafting
               cutting-edge, user-centric web solutions with a creative touch.
             </div>
             <a href={resume} target="_blank">
-              <button className="flex justify-center hover:scale-105 items-center gap-1 text-dark1 transition-all  bg-main px-3 py-1 rounded-2xl mt-3">
-                Resume <MdOutlineDownloading />
-              </button>
+              <ResumeButton />
             </a>
           </div>
-          <div className="SocialMedia flex flex-col justify-center items-center gap-5">
+          <div className="SocialMedia flex flex-col justify-center items-center gap-5 md:gap-7">
             <a href="https://www.linkedin.com/in/mohdfaziel/" target="_blank">
-              <FaLinkedinIn className="transition-all hover:scale-150" />
+              <FaLinkedinIn className="transition-all md:scale-150 md:hover:text-main hover:scale-150" />
             </a>
             <a href="mailto:mohdfazel969@gmail.com" target="_blank">
-              <HiOutlineMail className="transition-all hover:scale-150" />
+              <HiOutlineMail className="transition-all md:scale-150 md:hover:text-main hover:scale-150" />
             </a>
             <a href="https://github.com/mohdfaziel" target="_blank">
-              <ImGithub className="transition-all hover:scale-150" />
+              <ImGithub className="transition-all md:scale-150 md:hover:text-main hover:scale-150" />
             </a>
             <a href="https://leetcode.com/u/mohdfaziel/" target="_blank">
-              <SiLeetcode className="transition-all hover:scale-150" />
+              <SiLeetcode className="transition-all md:scale-150 md:hover:text-main hover:scale-150" />
             </a>
             <a
               href="https://www.instagram.com/heyy.faziel?igsh=MWQxdW1yNDJ5ZGVicA=="
               target="_blank"
             >
-              <FaInstagram className="transition-all hover:scale-150" />
+              <FaInstagram className="transition-all md:scale-150 md:hover:text-main hover:scale-150" />
             </a>
           </div>
         </motion.div>
