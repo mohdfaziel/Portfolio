@@ -1,6 +1,6 @@
 export default function Item({ title, target, activeLink, handleClick }) {
     return (
-      <li className="flex h-7 md:h-8 flex-col hover:scale-105 hover:text-active transition-all items-center">
+      <li className="flex h-7 flex-col hover:scale-105 hover:text-active transition-all items-center">
         <a
           href={`#${target}`}
           onClick={() => handleClick(target)}
