@@ -27,6 +27,10 @@ export default function Home() {
           className="left w-full md:w-[50%] h-full flex justify-center items-center"
         >
           <div className="w-[70%] md:w-[60%] relative">
+            {/* moveDot */}
+            <div
+              className="absolute w-[5px] aspect-square bg-white rounded-full shadow-[0_0_10px_#ffffff] z-10 animate-moveDot"
+            ></div>
             <motion.img
               variants={fadeIn("up", 0.3)}
               initial="hidden"
