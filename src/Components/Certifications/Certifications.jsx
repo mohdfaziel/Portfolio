@@ -37,7 +37,7 @@ export default function Certifications() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.1 }}
-          className="title text-4xl"
+          className="title text-4xl md:text-6xl"
         >
           <span className="border-t-4 z-10 border-main">C</span>ertifications
         </motion.dev>

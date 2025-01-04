@@ -15,7 +15,7 @@ export default function Qualification({
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.1 }}
-        className="text-base text-unactive"
+        className="text-base md:text-lg text-unactive"
       >
         {year} | {board}
       </motion.div>
@@ -33,7 +33,7 @@ export default function Qualification({
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.1 }}
-        className="text-sm text-unactive"
+        className="text-sm md:text-base text-unactive"
       >
         {location}
       </motion.div>
@@ -42,7 +42,7 @@ export default function Qualification({
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.1 }}
-        className="text-sm text-unactive"
+        className="text-sm md:text-base text-unactive"
       >
         {desc}
       </motion.div>

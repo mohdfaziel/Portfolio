@@ -49,7 +49,7 @@ export default function Home() {
               className="absolute -top-9 md:-top-16 -left-10"
             >
               <img width="40px" className="md:w-[70px]" src={Logo} alt="" />
-              <div className="name text-5xl md:text-7xl ">
+              <div className="name text-5xl md:text-6xl ">
                 Mohd <br />{" "}
                 <span className="border-b-4 rounded-sm border-main">Faz</span>
                 iel
@@ -65,14 +65,14 @@ export default function Home() {
           className="Right w-full md:w-[50%]  h-full flex justify-start items-center gap-3 md:gap-12"
         >
           <div className="Info flex flex-col gap-2 justify-center items-start">
-            <div className="text-6xl md:text-8xl">I'm</div>
+            <div className="text-6xl md:text-7xl">I'm</div>
             <div className="text-3xl md:text-6xl text-main">
               {text}
               <span className="text-main">
                 <Cursor cursorStyle="|" />
               </span>
             </div>
-            <div className="text-sm md:text-xl w-[18rem] md:w-[30rem] text-unactive">
+            <div className="text-sm md:text-lg text-justify w-[18rem] md:w-[30rem] text-unactive">
               Aspiring Full-Stack Web Developer. Dedicated to crafting
               cutting-edge, user-centric web solutions with a creative touch.
             </div>

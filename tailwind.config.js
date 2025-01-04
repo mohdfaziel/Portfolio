@@ -13,8 +13,8 @@ export default {
       colors: {
         "dark1": "#252734",
         "dark2": "#333646",
-        "unactive": "#5C5E6B",
-        "active": "#CED5E7",
+        "unactive": "#8E94A4",
+        "active": "#FFFFFF",
         "main": "#FFAF29",
       },
       animation: {

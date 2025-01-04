@@ -17,6 +17,7 @@ import {
   framer
 } from "./Icons/Icons";
 import Skill from "./Skill.jsx";
+import SkillButton from "../Certifications/CerButton.jsx";
 export default function Skills() {
   let skills = [
     { title: "JavaScript", purpose: "Interaction", logo: js },
@@ -47,16 +48,16 @@ export default function Skills() {
           viewport={{ once: false, amount: 0.1 }}
           className="Upper"
         >
-          <h1 className="text-4xl text-active">
+          <h1 className="text-4xl md:text-6xl text-active">
             <span className="border-t-4 z-10 border-main">E</span>ssestial Tools I
             use
           </h1>
-          <p className="z-10 text-sm text-unactive">
+          <p className="z-10 text-sm text-justify md:text-lg text-unactive">
             Discover the powerful tools and technologies I use to create
             exceptional, high-performing websites & applications.
           </p>
         </motion.div>
-        <div className="Lower w-full flex flex-wrap justify-start items-center gap-3">
+        <div className="Lower w-full flex flex-wrap justify-start items-center gap-3 md:gap-8">
           {skills.map((skill, idx) => (
             <Skill
               key={idx}

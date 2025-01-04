@@ -13,5 +13,6 @@ import tw from './Tailwind.svg';
 import vite from './Vite.svg';
 import framer from './framer.svg';
 import appwrite from './appwrite.svg';
+import firebase from './firebase.svg'
 
-export {js,c,appwrite,j,framer,py,css,figma,git,github,html,mi,react,tw,vite};
+export {js,c,appwrite,j,framer,firebase,py,css,figma,git,github,html,mi,react,tw,vite};

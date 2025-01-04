@@ -3,7 +3,7 @@ import fadeIn from "../../Framer/Fadein.js";
 import Project from "./Project";
 import { bakes, blog, honey, Logo} from "./Logos/projectLogos.js";
 import { Portfolio, Bakery,Blog, Honey } from "./Images/ScreenShots";
-import { js, css, html, react, tw, vite,appwrite ,framer} from "../Skills/Icons/Icons";
+import { js, css, html, react, tw, firebase,vite,appwrite ,framer} from "../Skills/Icons/Icons";
 export default function Projects() {
   return (
     <div
@@ -18,7 +18,7 @@ export default function Projects() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.1 }}
-          className="text-4xl"
+          className="text-4xl md:text-6xl"
         >
           <span className="border-t-4 text-left border-main">P</span>rojects
         </motion.h1>
@@ -62,7 +62,7 @@ export default function Projects() {
             desc="Dawood Beekeeper is an online store for selling pure, natural honey. I built it using React for the front end and Appwrite for the back end to make it easy for customers to browse and buy my honey securely."
             skill1={react}
             skill2={tw}
-            skill3={appwrite}
+            skill3={firebase}
             sc={Honey}
             git="https://github.com/mohdfaziel/E-Commerce-Honey-Selling-Website-"
             link="https://dawood-beekeeper.vercel.app/"

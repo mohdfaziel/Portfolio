@@ -38,7 +38,7 @@ export default function About() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.1 }}
-            className="text-4xl"
+            className="text-4xl md:text-6xl"
           >
             <span className="border-t-4 border-main">A</span>bout me
           </motion.h1>
@@ -47,7 +47,7 @@ export default function About() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.1 }}
-            className="text-sm text-unactive"
+            className="text-sm md:text-lg text-justify text-unactive"
           >
             Hi there! I'm an eager developer who likes to write code and make
             new stuff. I'm working toward a Bachelor of Technology in Computer
@@ -65,7 +65,7 @@ export default function About() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.1 }}
-            className="text-4xl pl-3"
+            className="text-4xl md:text-6xl pl-3"
           >
             <span className="border-t-4 border-main">Q</span>ualifications
           </motion.h1>
