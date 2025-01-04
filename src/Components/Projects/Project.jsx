@@ -38,15 +38,12 @@ export default function Project({
           {skill3 && <img className="w-6" src={skill3} alt="" />}
         </div>
         <a href={link} target="_blank">
-          {/* <button className="text-lg transition-all  hover:scale-105 text-dark1 min-w-16 mt-3 bg-main px-5 rounded-3xl py-1">
-            Live
-          </button> */}
           <AniButton />
         </a>
       </div>
       <img
         src={sc}
-        className="rounded-xl w-[25rem]  md:w-[30rem] max-w-[30rem] -right-[220px] -bottom-[50px] md:-right-20 md:-bottom-[15px] absolute"
+        className="rounded-xl w-[25rem]  md:w-[40rem] max-w-[45rem] -right-[220px] -bottom-[50px] md:-right-28 md:-bottom-[10px] absolute"
         alt=""
       />
     </motion.div>
