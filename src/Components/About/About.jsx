@@ -31,7 +31,7 @@ export default function About() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.1 }}
-          className="aboutme pr-10 w-full md:w-[50%] gap-2 flex flex-col items-start"
+          className="aboutme md:pr-10 w-full md:w-[50%] gap-2 flex flex-col items-start"
         >
           <motion.h1
             variants={fadeIn("", 0.3)}
