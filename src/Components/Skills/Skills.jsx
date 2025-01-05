@@ -13,6 +13,8 @@ import {
   mi,
   react,
   tw,
+  firebase,
+  appwrite,
   vite,
   framer
 } from "./Icons/Icons";
@@ -33,6 +35,8 @@ export default function Skills() {
     { title: "React", purpose: "FrameWork", logo: react },
     { title: "Tailwind", purpose: "User Interface", logo: tw },
     { title: "Vite", purpose: "Bundling", logo: vite },
+    { title: "Appwrite", purpose: "BaaS", logo: appwrite },
+    { title: "Firebase", purpose: "BaaS", logo: firebase },
     { title: "Framer Motion", purpose: "Animation", logo: framer },
   ];
   return (
