@@ -19,6 +19,7 @@ export default {
       },
       animation: {
         moveDot: 'moveDot 5s linear infinite 2s',
+        customPulse: 'customPulse 2s infinite ease-in-out',
       },
       keyframes: {
         moveDot: {
@@ -26,6 +27,10 @@ export default {
           '25%': { top: '-0%', left: 'calc(100% - 5px)' },
           '50%': { top: 'calc(100% - 5px)', left: 'calc(100% - 5px)' },
           '75%': { top: 'calc(100% - 5px)', left: '-0%' },
+        },
+        customPulse: {
+          '0%, 100%': { opacity: '0.15' }, 
+          '50%': { opacity: '0.20' },
         },
       },
     },

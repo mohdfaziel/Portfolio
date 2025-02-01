@@ -42,7 +42,7 @@ export default function NavBar() {
             activeLink={activeLink}
             handleClick={handleClick}
           />
-           <img width="300px" className="-z-10 -translate-x-2 absolute opacity-15" src={Ellipse} alt="" />
+           <img width="300px" className="-z-10 -translate-x-2 animate-customPulse absolute opacity-15" src={Ellipse} alt="" />
         </ul>
       </div>
       <div className="fixed min-[500px]:hidden flex z-20 bottom-2 w-full justify-center items-center">

@@ -52,7 +52,7 @@ export default function Certifications() {
             />
           ))}
         </div>
-        <div className="w-[300px] rounded-full h-[300px] absolute blur-3xl bg-active opacity-20 -top-[150px] -left-[150px]" />
+        <div className="w-[300px] rounded-full h-[300px] absolute blur-3xl animate-customPulse bg-active opacity-20 -top-[150px] -left-[150px]" />
       </div>
     </div>
   );

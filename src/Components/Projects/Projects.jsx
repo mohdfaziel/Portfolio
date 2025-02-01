@@ -68,7 +68,7 @@ export default function Projects() {
             link="https://dawood-beekeeper.vercel.app/"
           />
         </div>
-      <div className="w-[300px] rounded-full h-[300px] absolute blur-3xl bg-active opacity-20 -top-[85px] -right-[150px]" />
+      <div className="w-[300px] rounded-full h-[300px] absolute animate-customPulse blur-3xl bg-active opacity-20 -top-[85px] -right-[150px]" />
       </div>
     </div>
   );

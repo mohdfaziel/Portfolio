@@ -71,7 +71,7 @@ export default function Skills() {
             />
           ))}
         </div>
-        <div className="w-[300px] rounded-full h-[300px] absolute blur-3xl bg-active opacity-20 -top-[150px] -left-[150px]" />
+        <div className="w-[300px] rounded-full h-[300px] animate-customPulse absolute blur-3xl bg-active opacity-20 -top-[150px] -left-[150px]" />
       </div>
     </div>
   );
