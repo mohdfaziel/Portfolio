@@ -17,7 +17,7 @@ export default function Home() {
     loop: {},
   });
   return (
-    <div className="MainHome w-full px-[2rem] md:px-[10rem] text-active py-[1rem] md:py-[5rem] bg-dark1 h-100svh md:h-screen flex justify-center  items-center">
+    <div className="MainHome w-full px-[2rem] md:px-[10rem] text-active py-[1rem] md:py-[5rem] bg-dark1 h-100dvh md:h-screen flex justify-center  items-center">
       <div className="Container max-w-[85rem] gap-20 md:gap-0 h-full md:h-full w-full flex flex-col-reverse md:flex-row justify-center md:justify-center items-center">
         <motion.div
           variants={fadeIn("", 0.3)}
