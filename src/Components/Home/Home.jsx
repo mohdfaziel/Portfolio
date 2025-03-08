@@ -27,10 +27,6 @@ export default function Home() {
           className="left w-full md:w-[50%] h-full flex justify-center items-center"
         >
           <div className="w-[70%] md:w-[60%] relative">
-            {/* moveDot */}
-            <div
-              className="absolute w-[5px] aspect-square bg-white rounded-full shadow-[0_0_10px_#ffffff] z-10 animate-moveDot"
-            ></div>
             <motion.img
               variants={fadeIn("up", 0.3)}
               initial="hidden"
@@ -73,7 +69,7 @@ export default function Home() {
               </span>
             </div>
             <div className="text-sm md:text-lg text-justify w-[18rem] md:w-[30rem] text-unactive">
-              Aspiring Full-Stack Web Developer. Dedicated to crafting
+              MERN Developer. Dedicated to crafting
               cutting-edge, user-centric web solutions with a creative touch.
             </div>
             <a href={resume} target="_blank">

@@ -16,6 +16,8 @@ import {
   firebase,
   appwrite,
   vite,
+  mongo,
+  express,
   framer
 } from "./Icons/Icons";
 import Skill from "./Skill.jsx";
@@ -33,6 +35,8 @@ export default function Skills() {
     { title: "HTML", purpose: "Structure", logo: html },
     { title: "Material UI", purpose: "Components", logo: mi },
     { title: "React", purpose: "FrameWork", logo: react },
+    { title: "Express", purpose: "FrameWork", logo: express },
+    { title: "MongoDB", purpose: "DataBase", logo: mongo },
     { title: "Tailwind", purpose: "User Interface", logo: tw },
     { title: "Vite", purpose: "Bundling", logo: vite },
     { title: "Appwrite", purpose: "BaaS", logo: appwrite },
