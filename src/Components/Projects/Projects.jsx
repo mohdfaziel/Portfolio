@@ -59,7 +59,7 @@ export default function Projects() {
           <Project
             logo={honey}
             title="Dawood BeeKeeper"
-            desc="Dawood Beekeeper is an online store for selling pure, natural honey. I built it using React for the front end and Appwrite for the back end to make it easy for customers to browse and buy my honey securely."
+            desc="An online store dedicated to selling pure and natural honey sourced from Bhadarwah. The platform offers a seamless shopping experience, secure checkout, real-time order tracking, and an admin dashboard to manage orders, users, and inventory."
             skill1={react}
             skill2={tw}
             skill3={firebase}
