@@ -9,6 +9,7 @@ export default function Project({
   skill1 = false,
   skill2 = false,
   skill3 = false,
+  skill4 = false,
   sc,
   git,
   link,
@@ -19,7 +20,7 @@ export default function Project({
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: false, amount: 0.1 }}
-      className=" border-[1px] flex justify-start backdrop-blur-md items-center border-active overflow-hidden relative px-8 py-8 rounded-2xl min-h-[50%] w-full"
+      className=" border-[1px] h-[25rem] md:h-fit flex justify-start backdrop-blur-md items-start md:items-center border-active overflow-hidden relative p-4 md:p-6 rounded-2xl min-h-[50%] w-full"
     >
       <div className="Info z-10 flex flex-col gap-3 justify-center items-start w-[100%] md:w-[50%]">
         <div className="Logo w-[4rem] h-[4rem]">
@@ -36,6 +37,7 @@ export default function Project({
           {skill1 && <img className="w-6" src={skill1} alt="" />}
           {skill2 && <img className="w-6" src={skill2} alt="" />}
           {skill3 && <img className="w-6" src={skill3} alt="" />}
+          {skill4 && <img className="w-6" src={skill4} alt="" />}
         </div>
         <a href={link} target="_blank">
           <AniButton />
@@ -43,7 +45,7 @@ export default function Project({
       </div>
       <img
         src={sc}
-        className="rounded-xl w-[25rem]  md:w-[40rem] max-w-[45rem] -right-[220px] -bottom-[50px] md:-right-28 md:-bottom-[10px] absolute"
+        className="rounded-xl w-[25rem]  md:w-[40rem] max-w-[45rem] -right-[210px] -bottom-[40px] md:-right-28 md:-bottom-[15px] absolute"
         alt=""
       />
     </motion.div>

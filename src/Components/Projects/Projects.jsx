@@ -3,7 +3,7 @@ import fadeIn from "../../Framer/Fadein.js";
 import Project from "./Project";
 import { bakes, blog, honey, Logo} from "./Logos/projectLogos.js";
 import { Portfolio, Bakery,Blog, Honey } from "./Images/ScreenShots";
-import { js, css, html, react, tw, firebase,vite,appwrite ,framer} from "../Skills/Icons/Icons";
+import { js, css, html, react, tw, firebase,vite,appwrite ,framer, express} from "../Skills/Icons/Icons";
 export default function Projects() {
   return (
     <div
@@ -58,14 +58,15 @@ export default function Projects() {
           />
           <Project
             logo={honey}
-            title="Dawood BeeKeeper"
-            desc="An online store dedicated to selling pure and natural honey sourced from Bhadarwah. The platform offers a seamless shopping experience, secure checkout, real-time order tracking, and an admin dashboard to manage orders, users, and inventory."
+            title="RoyNect"
+            desc="Roynect is a premium honey store from Bhadarwah, offering a seamless shopping experience with secure checkout, order tracking, and easy management."
             skill1={react}
             skill2={tw}
             skill3={firebase}
+            skill4={express}
             sc={Honey}
-            git="https://github.com/mohdfaziel/E-Commerce-Honey-Selling-Website-"
-            link="https://dawood-beekeeper.vercel.app/"
+            git="https://github.com/mohdfaziel/RoyNect"
+            link="https://roynect.vercel.app/product"
           />
         </div>
       <div className="w-[300px] rounded-full h-[300px] absolute animate-customPulse blur-3xl bg-active opacity-20 -top-[85px] -right-[150px]" />
