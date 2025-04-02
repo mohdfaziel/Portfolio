@@ -48,7 +48,7 @@ export default function Projects() {
           <Project
             logo={bakes}
             title="Aatiqa Bakes"
-            desc="A charming and modern bakery website built using Tailwind CSS, React, and Framer Motion, designed to provide an inviting and interactive experience for customers."
+            desc="A sleek and visually appealing bakery website UI designed with Tailwind CSS, React, and Framer Motion for a delightful browsing experience."
             skill1={react}
             skill2={tw}
             skill3={framer}
