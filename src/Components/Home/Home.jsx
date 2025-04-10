@@ -9,7 +9,7 @@ import { ImGithub } from "react-icons/im";
 import { SiLeetcode } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import resume from "../../assets/resume.pdf";
+import resume from "../../assets/MohdFaziel_Resume.pdf";
 import ResumeButton from "./ResumeButton.jsx";
 import SEO from "../SEO/SEO";
 
