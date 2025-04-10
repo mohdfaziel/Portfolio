@@ -1,29 +1,31 @@
 import { motion } from "framer-motion";
 import fadeIn from "../../Framer/Fadein.js";
 import Certificate from "./Certificate";
-import { ms, ibm, ln } from "./Icons/icons";
+import { ms, ibm, ln, git } from "./Icons/icons";
 import intern from "./intern.pdf";
-import webD from "./webdev basis.pdf";
 export default function Certifications() {
   let certificates = [
     {
       logos: [ms, ln],
       title: "MicroSoft and Linkdln",
-      desc: "Career Essential in Software Development by Microsoft and LinkedIn",
+      desc:
+        "Career Essential in Software Development by Microsoft and LinkedIn",
       proof:
         "https://www.linkedin.com/learning/certificates/2cd7389e3a491029e558f5619b7c73ffd2171d928a2065a4b47d07c5acda0ba1",
+    },
+    {
+      logos: [git],
+      title: "GitHub Foundations",
+      desc:
+        "Entry-level certification on GitHub basics like repos, commits, and branching.",
+      proof:
+        "https://www.credly.com/badges/6cd97587-24c4-4803-b894-3fb62d342c91/public_url",
     },
     {
       logos: [ibm],
       title: "FrontEnd Intern",
       desc: "IBM SkillsBuild Summer Internship Program",
       proof: intern,
-    },
-    {
-      logos: [ibm],
-      title: "WebDev Basics",
-      desc: "IBM certificate in basic web development skills.",
-      proof: webD,
     },
   ];
   return (
