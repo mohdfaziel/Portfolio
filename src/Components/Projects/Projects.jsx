@@ -54,7 +54,7 @@ export default function Projects() {
               skill4={express}
               sc={Honey}
               git="https://github.com/mohdfaziel/RoyNect"
-              link="https://roynect.vercel.app/product"
+              link="https://roynect.vercel.app/"
             />
             <Project
               logo={Logo}
