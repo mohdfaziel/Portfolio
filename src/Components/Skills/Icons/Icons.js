@@ -15,6 +15,7 @@ import mongo from './mongoDB.svg'
 import vite from './Vite.svg';
 import framer from './framer.svg';
 import appwrite from './appwrite.svg';
-import firebase from './firebase.svg'
+import firebase from './firebase.svg';
+import ts from './typescript.svg';
 
-export {js,c,appwrite,mongo,express,j,framer,firebase,py,css,figma,git,github,html,mi,react,tw,vite};
+export {js,c,appwrite,mongo,ts,express,j,framer,firebase,py,css,figma,git,github,html,mi,react,tw,vite};

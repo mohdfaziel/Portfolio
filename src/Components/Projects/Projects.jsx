@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import fadeIn from "../../Framer/Fadein.js";
 import Project from "./Project";
-import { bakes, blog, honey, Logo } from "./Logos/projectLogos.js";
-import { Portfolio, Bakery, Blog, Honey } from "./Images/ScreenShots";
+import { bakes, blog, hiv, honey, Logo } from "./Logos/projectLogos.js";
+import { Portfolio, Bakery, Blog, Honey, Hiv } from "./Images/ScreenShots";
 import {
   js,
   css,
@@ -14,6 +14,7 @@ import {
   appwrite,
   framer,
   express,
+  ts,
 } from "../Skills/Icons/Icons";
 import SEO from "../SEO/SEO";
 
@@ -55,6 +56,18 @@ export default function Projects() {
               sc={Honey}
               git="https://github.com/mohdfaziel/RoyNect"
               link="https://roynect.vercel.app/"
+            />
+            <Project
+              logo={hiv}
+              title="HIV Quest"
+              desc="HIV Quest is an interactive HIV/AIDS education platform offering multilingual modules, engaging games, progress tracking, and a user-friendly, mobile-responsive experience."
+              skill1={react}
+              skill2={tw}
+              skill3={ts}
+              skill4={firebase}
+              sc={Hiv}
+              git="https://github.com/mohdfaziel/HIV-Quest"
+              link="https://hivquest.vercel.app/"
             />
             <Project
               logo={Logo}

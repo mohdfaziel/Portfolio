@@ -3,4 +3,5 @@ import arrow from './arrow.png';
 import bakes from './bakes.png';
 import honey from './honey.png';
 import blog from './blog.png';
-export {Logo,arrow,honey,blog,bakes};
+import hiv from './hiv.svg';
+export {Logo,arrow,hiv,honey,blog,bakes};
