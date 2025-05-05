@@ -13,7 +13,10 @@
     "@fontsource/inter": "^5.1.0",
     "@fontsource/poppins": "^5.1.0",
     "@react-spring/web": "^9.7.5",
+    "@tabler/icons-react": "^3.31.0",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.11.11",
+    "motion": "^12.9.7",
     "ogl": "^1.0.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -22,6 +25,7 @@
     "react-router-dom": "^6.28.0",
     "react-simple-typewriter": "^5.0.1",
     "styled-components": "^6.1.14",
+    "tailwind-merge": "^3.2.0",
     "typewriter": "^6.1.8"
   },
   "devDependencies": {
