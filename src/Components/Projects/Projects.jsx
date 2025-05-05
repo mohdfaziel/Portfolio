@@ -41,7 +41,7 @@ export default function Projects() {
             <span className="border-t-4 text-left border-main">P</span>rojects
           </motion.h2>
           <div
-            className="Projects w-full flex justify-start gap-6 flex-wrap"
+            className="Projects w-full flex justify-center gap-6 flex-wrap"
             role="list"
             aria-label="Project List"
           >

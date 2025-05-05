@@ -22,7 +22,7 @@ export default function Project({
       initial="hidden"
       whileInView={"show"}
        viewport={fadeIn("left", 0.3).viewportOptions}
-      className="border-[1px] h-[25rem] md:h-fit flex justify-start backdrop-blur-md items-start md:items-center border-active overflow-hidden relative p-4 md:p-6 rounded-2xl min-h-[50%] w-full"
+      className="border-[1px] h-[25rem] md:h-fit flex justify-start backdrop-blur-md items-start md:items-center border-active overflow-hidden relative p-4 md:p-6 rounded-2xl min-h-[50%] w-full md:w-[80%]"
       role="listitem"
       itemScope
       itemType="https://schema.org/WebSite"
@@ -46,7 +46,7 @@ export default function Project({
           </h3>
         </a>
         <p 
-          className="text-sm md:text-base text-justify text-unactive"
+          className="text-sm md:text-base md:w-[20rem] text-justify text-unactive"
           itemProp="description"
         >
           {desc}
