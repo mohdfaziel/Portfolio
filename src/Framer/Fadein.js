@@ -15,6 +15,10 @@ const fadeIn=(direction, delay, opacity=1)=>{
                 delay: delay,
                 ease:[0.25,0.25,0.25,0.75],
             }
+        },
+        viewportOptions: {
+            once: true,
+            amount: 0.1
         }
     }
 }

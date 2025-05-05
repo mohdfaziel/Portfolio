@@ -35,7 +35,7 @@ export default function Projects() {
             variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.1 }}
+             viewport={fadeIn("left", 0.3).viewportOptions}
             className="text-4xl md:text-6xl"
           >
             <span className="border-t-4 text-left border-main">P</span>rojects

@@ -62,7 +62,7 @@ export default function Skills() {
             variants={fadeIn("", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={fadeIn("", 0.3).viewportOptions}
             className="Upper"
           >
             <h2 className="text-4xl md:text-6xl text-active">

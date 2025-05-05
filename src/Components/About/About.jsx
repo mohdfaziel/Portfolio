@@ -39,14 +39,14 @@ export default function About() {
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.1 }}
+             viewport={fadeIn("left", 0.3).viewportOptions}
             className="aboutme md:pr-10 w-full md:w-[50%] gap-2 flex flex-col items-start"
           >
             <motion.h2
               variants={fadeIn("", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.1 }}
+               viewport={fadeIn("left", 0.3).viewportOptions}
               className="text-4xl md:text-6xl"
             >
               <span className="border-t-4 border-main">A</span>bout me
@@ -55,7 +55,7 @@ export default function About() {
               variants={fadeIn("left", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.1 }}
+               viewport={fadeIn("left", 0.3).viewportOptions}
               className="text-sm md:text-lg text-justify text-unactive"
               itemProp="description"
             >
@@ -77,7 +77,7 @@ export default function About() {
               variants={fadeIn("", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.1 }}
+               viewport={fadeIn("left", 0.3).viewportOptions}
               className="text-4xl md:text-6xl pl-3"
             >
               <span className="border-t-4 border-main">Q</span>ualifications

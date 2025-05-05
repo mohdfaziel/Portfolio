@@ -21,7 +21,7 @@ export default function Qualification({
         variants={fadeIn("right", 0.3)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.1 }}
+         viewport={fadeIn("left", 0.3).viewportOptions}
         className="text-base md:text-lg text-unactive"
       >
         <time itemProp="startDate">{year}</time> | <span itemProp="award">{board}</span>
@@ -30,7 +30,7 @@ export default function Qualification({
         variants={fadeIn("right", 0.3)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.1 }}
+         viewport={fadeIn("left", 0.3).viewportOptions}
         className="text-2xl"
         itemProp="name"
       >
@@ -40,7 +40,7 @@ export default function Qualification({
         variants={fadeIn("right", 0.3)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.1 }}
+         viewport={fadeIn("left", 0.3).viewportOptions}
         className="text-sm md:text-base text-unactive"
         itemProp="address"
       >
@@ -50,7 +50,7 @@ export default function Qualification({
         variants={fadeIn("right", 0.3)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.1 }}
+         viewport={fadeIn("left", 0.3).viewportOptions}
         className="text-sm md:text-base text-unactive"
         itemProp="description"
       >

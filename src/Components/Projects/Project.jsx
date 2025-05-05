@@ -21,7 +21,7 @@ export default function Project({
       variants={fadeIn("up", 0.3)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{ once: false, amount: 0.1 }}
+       viewport={fadeIn("left", 0.3).viewportOptions}
       className="border-[1px] h-[25rem] md:h-fit flex justify-start backdrop-blur-md items-start md:items-center border-active overflow-hidden relative p-4 md:p-6 rounded-2xl min-h-[50%] w-full"
       role="listitem"
       itemScope

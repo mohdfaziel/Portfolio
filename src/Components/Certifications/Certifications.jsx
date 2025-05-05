@@ -38,7 +38,7 @@ export default function Certifications() {
           variants={fadeIn("", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.1 }}
+           viewport={fadeIn("left", 0.3).viewportOptions}
           className="title text-4xl md:text-6xl"
         >
           <span className="border-t-4 z-10 border-main">C</span>ertifications

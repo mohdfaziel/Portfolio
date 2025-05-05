@@ -34,7 +34,7 @@ export default function Home() {
             variants={fadeIn("", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={fadeIn("", 0.3).viewportOptions}
             className="left w-full md:w-[50%] h-full flex justify-center items-center"
           >
             <div className="w-[70%] md:w-[60%] relative">
@@ -42,7 +42,7 @@ export default function Home() {
                 variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={fadeIn("up", 0.3).viewportOptions}
                 width="100%"
                 className="rounded-xl"
                 src={Image}
@@ -53,7 +53,7 @@ export default function Home() {
                 variants={fadeIn("down", 0.3)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={fadeIn("down", 0.3).viewportOptions}
                 className="absolute -top-9 md:-top-16 -left-10"
               >
                 <img width="40px" className="md:w-[70px]" src={Logo} alt="Personal Logo" />
@@ -69,7 +69,7 @@ export default function Home() {
             variants={fadeIn("left", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={fadeIn("left", 0.3).viewportOptions}
             className="Right w-full md:w-[50%] h-full flex justify-start items-center gap-3 md:gap-12"
           >
             <div className="Info flex flex-col gap-2 justify-center items-start">

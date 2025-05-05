@@ -8,7 +8,7 @@ export default function Skill({ title, purpose, logo }) {
       variants={fadeIn("", 0.3)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{ once: false, amount: 0.1 }}
+       viewport={fadeIn("left", 0.3).viewportOptions}
       className="flex hover:bg-active transition-all text-active hover:text-dark2 justify-start gap-2 md:gap-0 border-[1px] rounded-2xl px-2 backdrop-blur-md py-2 border-unactive items-center w-full md:w-60"
       role="listitem"
       itemScope
