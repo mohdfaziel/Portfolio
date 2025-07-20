@@ -22,7 +22,6 @@ import {
 } from "./Icons/Icons";
 import Skill from "./Skill.jsx";
 import SkillButton from "../Certifications/CerButton.jsx";
-import SEO from "../SEO/SEO";
 
 export default function Skills() {
   const skills = [
@@ -48,10 +47,6 @@ export default function Skills() {
 
   return (
     <>
-      <SEO 
-        title="Mohd Faziel - Technical Skills & Tools"
-        description="Explore my technical skills and tools including JavaScript, React, Node.js, and modern web development technologies."
-      />
       <section
         id="skills"
         className="About w-full px-[2rem] md:px-[10rem] py-[4rem] md:py-[5rem] text-active bg-dark2 min-h-screen flex justify-center items-center"

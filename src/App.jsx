@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <SEO
-        title="Mohd Faziel - Portfolio"
+        title="Mohd Faziel | Full Stack Developer"
         description="Professional portfolio showcasing web development projects, skills, and experience in React, JavaScript, and modern web technologies."
       />
       <ClickSpark

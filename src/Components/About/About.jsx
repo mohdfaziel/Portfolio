@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import fadeIn from "../../Framer/Fadein.js";
 import Qualification from "./Qualification.jsx";
-import SEO from "../SEO/SEO";
 import { TextGenerateEffect } from "../../utils/TextGenerator/TextGenerateEffect.jsx";
 
 export default function About() {
@@ -26,10 +25,6 @@ export default function About() {
 
   return (
     <>
-      <SEO 
-        title="About Mohd Faziel - Education & Background"
-        description="Learn about Mohd Faziel's educational background, qualifications, and journey in computer science and web development."
-      />
       <section
         id="about"
         className="About w-full text-active px-[2rem] md:px-[10rem] py-[3rem] md:py-[5rem] bg-dark2 min-h-screen flex justify-center items-center"

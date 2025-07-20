@@ -16,15 +16,10 @@ import {
   express,
   ts,
 } from "../Skills/Icons/Icons";
-import SEO from "../SEO/SEO";
 
 export default function Projects() {
   return (
     <>
-      <SEO
-        title="Mohd Faziel - Web Development Projects Portfolio"
-        description="Explore my web development projects showcasing React, Tailwind CSS, and modern web technologies. View live demos and source code."
-      />
       <section
         id="projects"
         className="About w-full px-[2rem] md:px-[10rem] py-[3rem] md:py-[5rem] text-active bg-dark1 min-h-screen flex justify-center items-center"

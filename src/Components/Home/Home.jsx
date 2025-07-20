@@ -11,7 +11,6 @@ import { FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import resume from "../../assets/MohdFaziel_Resume.pdf";
 import ResumeButton from "./ResumeButton.jsx";
-import SEO from "../SEO/SEO";
 import RotatingText from "../../utils/RotatingText.jsx";
 import { BackgroundBeamsWithCollision } from "../../utils/BackgroundBeams/BackgroundBeamsWithCollision .jsx";
 
@@ -23,10 +22,6 @@ export default function Home() {
 
   return (
     <>
-      <SEO
-        title="Mohd Faziel - Web Developer Portfolio | Home"
-        description="MERN Stack Developer specializing in creating cutting-edge, user-centric web solutions. Explore my projects and skills in web development."
-      />
       <BackgroundBeamsWithCollision className="min-h-screen w-full bg-dark1">
         <section
           className="MainHome w-full px-[2rem] md:px-[10rem] text-active py-[1rem] md:py-[5rem] z-10 relative flex justify-center items-center"
