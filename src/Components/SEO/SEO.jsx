@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import PropTypes from 'prop-types';
 
 const SEO = ({ title, description, type = 'website', image, route = '' }) => {
-  const siteUrl = 'https://www.faziel.me'; // Actual deployed URL
+  const siteUrl = 'https://faziel.vercel.app/'; // Actual deployed URL
   const fullUrl = `${siteUrl}${route}`;
   const imageUrl = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
 
