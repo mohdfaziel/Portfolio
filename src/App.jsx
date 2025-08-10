@@ -6,8 +6,8 @@ import Projects from "./Components/Projects/Projects";
 import Certifications from "./Components/Certifications/Certifications";
 import About from "./Components/About/About";
 import Footer from "./Components/Footer";
-import ClickSpark from "./utils/ClickSpark";
 import SEO from "./Components/SEO/SEO";
+import Avatar from "./Components/FazBot/Avatar";
 
 function App() {
   return (
@@ -16,13 +16,6 @@ function App() {
         title="Mohd Faziel | Full Stack Developer"
         description="Professional portfolio showcasing web development projects, skills, and experience in React, JavaScript, and modern web technologies."
       />
-      <ClickSpark
-        sparkColor="#FFAF29"
-        sparkSize={10}
-        sparkRadius={15}
-        sparkCount={8}
-        duration={400}
-      >
         <div className="overflow-x-hidden">
           <header>
             <NavBar />
@@ -45,8 +38,8 @@ function App() {
             </section>
           </main>
           <Footer />
+          <Avatar onClick={() => console.log("Avatar clicked")} />
         </div>
-      </ClickSpark>
     </>
   );
 }
