@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Avatar from "./Avatar";
-import PersonalData from "../../assets/Mohd Faziel (Resume).txt?raw";
+import { personalData as PersonalData } from "../../assets/personalData.js";
 
 function Bot() {
   const API_URL = import.meta.env.VITE_API;
