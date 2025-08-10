@@ -9,6 +9,7 @@ Email: mohdfazel969@gmail.com
 Portfolio: https://faziel.vercel.app/
 LinkedIn: https://www.linkedin.com/in/mohdfaziel/
 GitHub: https://github.com/mohdfaziel
+Instagram: https://www.instagram.com/heyy.faziel?igsh=MWQxdW1yNDJ5ZGVicA==
 LeetCode: https://leetcode.com/u/mohdfaziel/
 Height: 6.0 ft
 Weight: 76 kg
