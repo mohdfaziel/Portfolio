@@ -62,7 +62,7 @@ function Bot() {
   };
 
   return (
-    <div className="fixed bottom-5 right-5 z-50">
+    <div className="hidden md:flex fixed bottom-5 right-5 z-50">
       {/* Avatar with clickable toggle */}
       <div
         className="relative cursor-pointer"
