@@ -7,7 +7,7 @@ import Certifications from "./Components/Certifications/Certifications";
 import About from "./Components/About/About";
 import Footer from "./Components/Footer";
 import SEO from "./Components/SEO/SEO";
-import Avatar from "./Components/FazBot/Avatar";
+import Bot from "./Components/FazBot/Bot";
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
             </section>
           </main>
           <Footer />
-          <Avatar onClick={() => console.log("Avatar clicked")} />
+          <Bot />
         </div>
     </>
   );
