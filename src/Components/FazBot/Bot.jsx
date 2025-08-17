@@ -1,40 +1,54 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Avatar from "./Avatar";
 import { personalData as PersonalData } from "./personalData.js";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 function Bot() {
-  const API_URL = import.meta.env.VITE_API;
-  const [messageHistory, setMessageHistory] = useState("");
+  const API_KEY = import.meta.env.VITE_API; 
   const [response, setResponse] = useState(null);
   const [userInput, setUserInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [showChat, setShowChat] = useState(false);
 
-  const apiCall = async (inputText) => {
-    if (!API_URL) {
-      console.error("API URL is not configured.");
-      setResponse("Yikes! My battery went down 🔋. Let's talk later.");
+  // Ref to persist chat session across renders
+  const chatRef = useRef(null);
+
+  // Initializing Gemini chat session once
+  useEffect(() => {
+    if (!API_KEY) {
+      console.error("API key is not configured.");
       return;
     }
 
-    const prompt = `${PersonalData}\n\nChat History:\n${messageHistory}\n\nUser Question: ${inputText}`;
+    const genAI = new GoogleGenerativeAI(API_KEY);
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+    chatRef.current = model.startChat({
+      history: [
+        {
+          role: "user",
+          parts: [{ text: PersonalData }],
+        },
+        {
+          role: "model",
+          parts: [{ text: "Got it, I'll remember this." }],
+        },
+      ],
+    });
+  }, [API_KEY]);
+
+  const apiCall = async (inputText) => {
+    if (!chatRef.current) {
+      setResponse("Chat not initialized. Please refresh.");
+      return;
+    }
+
     setIsLoading(true);
 
     try {
-      const data = await fetch(API_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-        }),
-      });
+      const result = await chatRef.current.sendMessage(inputText);
+      const botResponse = result.response.text();
 
-      if (!data.ok) throw new Error(`HTTP error! status: ${data.status}`);
-
-      const result = await data.json();
-      const botResponse = result.candidates[0].content.parts[0].text;
-      
-      setMessageHistory(prev => prev + `\nUser: ${inputText}\nBot: ${botResponse}`);
       setResponse(botResponse);
     } catch (error) {
       console.error("API Error:", error);
