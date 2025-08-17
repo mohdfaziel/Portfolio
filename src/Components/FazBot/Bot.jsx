@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Avatar from "./Avatar";
-import { personalData as PersonalData } from "../../assets/personalData.js";
+import { personalData as PersonalData } from "./personalData.js";
 
 function Bot() {
   const API_URL = import.meta.env.VITE_API;
+  const [messageHistory, setMessageHistory] = useState("");
   const [response, setResponse] = useState(null);
   const [userInput, setUserInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -16,7 +17,7 @@ function Bot() {
       return;
     }
 
-    const prompt = `${PersonalData}\nThis is the User Question: ${inputText}`;
+    const prompt = `${PersonalData}\n\nChat History:\n${messageHistory}\n\nUser Question: ${inputText}`;
     setIsLoading(true);
 
     try {
@@ -31,7 +32,10 @@ function Bot() {
       if (!data.ok) throw new Error(`HTTP error! status: ${data.status}`);
 
       const result = await data.json();
-      setResponse(result.candidates[0].content.parts[0].text);
+      const botResponse = result.candidates[0].content.parts[0].text;
+      
+      setMessageHistory(prev => prev + `\nUser: ${inputText}\nBot: ${botResponse}`);
+      setResponse(botResponse);
     } catch (error) {
       console.error("API Error:", error);
       const funnyReplies = [
@@ -63,13 +67,11 @@ function Bot() {
 
   return (
     <div className="hidden md:flex fixed bottom-5 right-5 z-50">
-      {/* Avatar with clickable toggle */}
       <div
         className="relative cursor-pointer"
       >
         <Avatar onClick={() => setShowChat((prev) => !prev)}/>
 
-        {/* Thought Bubble */}
         {showChat && (
           <div
             className="absolute bottom-36 -left-52 bg-[#1e1f26]  rounded-2xl p-2 max-w-[20rem] shadow-lg flex flex-col space-y-3
