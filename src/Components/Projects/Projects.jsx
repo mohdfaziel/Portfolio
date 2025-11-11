@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import fadeIn from "../../Framer/Fadein.js";
 import Project from "./Project";
-import { bakes, blog, hiv, honey, Logo } from "./Logos/projectLogos.js";
-import { Portfolio, Bakery, Blog, Honey, Hiv } from "./Images/ScreenShots";
+import { bakes, blog, ecometer, hiv, honey, Logo } from "./Logos/projectLogos.js";
+import { Portfolio, Bakery, Blog, Honey, Hiv, Ecometer } from "./Images/ScreenShots";
 import {
   js,
   css,
@@ -15,6 +15,9 @@ import {
   framer,
   express,
   ts,
+  mongo,
+  python,
+  node,
 } from "../Skills/Icons/Icons";
 
 export default function Projects() {
@@ -30,7 +33,7 @@ export default function Projects() {
             variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
-             viewport={fadeIn("left", 0.3).viewportOptions}
+            viewport={fadeIn("left", 0.3).viewportOptions}
             className="text-4xl md:text-6xl"
           >
             <span className="border-t-4 text-left border-main">P</span>rojects
@@ -41,13 +44,25 @@ export default function Projects() {
             aria-label="Project List"
           >
             <Project
+              logo={ecometer}
+              title="EcoMeter"
+              desc="EcoMeter is an ML-powered tool that predicts vehicle CO2 emissions based on car specifications. Compare different vehicles' environmental impact to make eco-conscious automotive decisions."
+              skill1={react}
+              skill2={mongo}
+              skill3={node}
+              skill4={python}
+              sc={Ecometer}
+              git="https://github.com/mohdfaziel/EcoMeter"
+              link="https://ecometer-frontend.vercel.app/"
+            />
+            <Project
               logo={honey}
               title="RoyNect"
               desc="Roynect is a premium honey store from Bhadarwah, offering a seamless shopping experience with secure checkout, order tracking, and easy management."
               skill1={react}
               skill2={tw}
               skill3={firebase}
-              skill4={express}
+              skill4={node}
               sc={Honey}
               git="https://github.com/mohdfaziel/RoyNect"
               link="https://roynect.vercel.app/"
@@ -63,39 +78,6 @@ export default function Projects() {
               sc={Hiv}
               git="https://github.com/mohdfaziel/HIV-Quest"
               link="https://hivquest.vercel.app/"
-            />
-            <Project
-              logo={Logo}
-              title="Portfolio"
-              desc="This portfolio website showcases my Web development skills using React, Tailwind, and JavaScript, featuring diverse projects and a focus on user-centric design."
-              skill1={react}
-              skill2={tw}
-              skill3={framer}
-              sc={Portfolio}
-              git="https://github.com/mohdfaziel/Portfolio-New"
-              link="https://faziel.vercel.app/"
-            />
-            <Project
-              logo={blog}
-              title="Blog WebApp"
-              desc="Blog WebApp is a web application for uploading and viewing blog posts. Built using React.js and Appwrite, it features secure authentication, intuitive navigation, and smooth performance"
-              skill1={react}
-              skill2={tw}
-              skill3={appwrite}
-              sc={Blog}
-              git="https://github.com/mohdfaziel/BlogApp"
-              link="https://blog-app-faziel.vercel.app/"
-            />
-            <Project
-              logo={bakes}
-              title="Aatiqa Bakes"
-              desc="A sleek and visually appealing bakery website UI designed with Tailwind CSS, React, and Framer Motion for a delightful browsing experience."
-              skill1={react}
-              skill2={tw}
-              skill3={framer}
-              sc={Bakery}
-              git="https://github.com/mohdfaziel/Aatiqa-Bakes-Cakes"
-              link="https://aatiqa-bakes-cakes.vercel.app/"
             />
           </div>
           <div
