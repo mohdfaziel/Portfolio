@@ -4,13 +4,11 @@ import {
   js,
   c,
   j,
-  py,
   css,
   figma,
   git,
   github,
   html,
-  mi,
   react,
   tw,
   firebase,
@@ -18,32 +16,31 @@ import {
   vite,
   mongo,
   express,
-  framer
+  node2,
+
 } from "./Icons/Icons";
 import Skill from "./Skill.jsx";
 import SkillButton from "../Certifications/CerButton.jsx";
 
 export default function Skills() {
   const skills = [
-    { title: "JavaScript", purpose: "Interaction", logo: js },
-    { title: "C", purpose: "Programming", logo: c },
-    { title: "Java", purpose: "Programming", logo: j },
-    { title: "Python", purpose: "Programming", logo: py },
-    { title: "CSS", purpose: "User Interface", logo: css },
-    { title: "Figma", purpose: "Design Tool", logo: figma },
-    { title: "Git", purpose: "Versioning", logo: git },
-    { title: "Github", purpose: "Collaboration", logo: github },
-    { title: "HTML", purpose: "Structure", logo: html },
-    { title: "Material UI", purpose: "Components", logo: mi },
-    { title: "React", purpose: "FrameWork", logo: react },
-    { title: "Express", purpose: "FrameWork", logo: express },
-    { title: "MongoDB", purpose: "DataBase", logo: mongo },
-    { title: "Tailwind", purpose: "User Interface", logo: tw },
-    { title: "Vite", purpose: "Bundling", logo: vite },
-    { title: "Appwrite", purpose: "BaaS", logo: appwrite },
-    { title: "Firebase", purpose: "BaaS", logo: firebase },
-    { title: "Framer Motion", purpose: "Animation", logo: framer },
-  ];
+  { title: "MongoDB", purpose: "DataBase", logo: mongo },
+  { title: "Express", purpose: "FrameWork", logo: express },
+  { title: "React", purpose: "FrameWork", logo: react },
+  { title: "Node.js", purpose: "Runtime Environment", logo: node2 },
+  { title: "JavaScript", purpose: "Interaction", logo: js },
+  { title: "C", purpose: "Programming", logo: c },
+  { title: "Java", purpose: "Programming", logo: j },
+  { title: "CSS", purpose: "User Interface", logo: css },
+  { title: "Figma", purpose: "Design Tool", logo: figma },
+  { title: "Git", purpose: "Versioning", logo: git },
+  { title: "Github", purpose: "Collaboration", logo: github },
+  { title: "HTML", purpose: "Structure", logo: html },
+  { title: "Tailwind", purpose: "User Interface", logo: tw },
+  { title: "Vite", purpose: "Bundling", logo: vite },
+  { title: "Firebase", purpose: "BaaS", logo: firebase },
+];
+
 
   return (
     <>

@@ -19,5 +19,6 @@ import appwrite from './appwrite.svg';
 import firebase from './firebase.svg';
 import ts from './typescript.svg';
 import node from './node.svg';
+import node2 from './node2.svg';
 
-export {js,node,c,python,appwrite,mongo,ts,express,j,framer,firebase,py,css,figma,git,github,html,mi,react,tw,vite};
+export {js,node,c,python,node2,appwrite,mongo,ts,express,j,framer,firebase,py,css,figma,git,github,html,mi,react,tw,vite};
