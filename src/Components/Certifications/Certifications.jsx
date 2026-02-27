@@ -1,10 +1,17 @@
 import { motion } from "framer-motion";
 import fadeIn from "../../Framer/Fadein.js";
 import Certificate from "./Certificate";
-import { ms, ibm, ln, git } from "./Icons/icons";
+import { ms, ibm, ln, git, rh} from "./Icons/icons";
 import intern from "./intern.pdf";
+import impact from "./impact.pdf"
 export default function Certifications() {
   let certificates = [
+    {
+      logos: [rh],
+      title: "Best Paper Award – IMPACT 2026",
+      desc: "International Conference Research Award",
+      proof: impact,
+    },
     {
       logos: [ms, ln],
       title: "MicroSoft and Linkdln",
@@ -27,6 +34,7 @@ export default function Certifications() {
       desc: "IBM SkillsBuild Summer Internship Program",
       proof: intern,
     },
+    
   ];
   return (
     <div
