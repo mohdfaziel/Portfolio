@@ -38,7 +38,7 @@ function App() {
             </section>
           </main>
           <Footer />
-          <Bot />
+          {/* <Bot /> */}
         </div>
     </>
   );
